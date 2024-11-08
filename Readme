@@ -1,0 +1,5 @@
+Run this code on a node server after initialising npm
+Install all the relevant packages with the command "npm i"
+Run the app thorugh nodemon with the command "nodemon index.js"
+
+*Don't use "" in the code
