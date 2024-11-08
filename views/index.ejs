@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Me</title>
+    <link rel="stylesheet" href="/styles/main.css"></link>
+</head>
+<body>
+    <div class="header">
+        <h1 class="web-heading">
+            Solve a Riddle!
+        </h1>
+    </div>
+    <div class="img-container">
+        <div class="image" onclick="revealAnswer()">
+            <img class="question-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Question_mark.png/380px-Question_mark.png">
+            <div class="overlay-text">
+                <span class="riddle-overlay" id="riddle-text">
+                    <%= result.riddle %>
+                </span>
+                <span class="answer-overlay" id="riddle-text">
+                    <%= result.answer %>
+                </span> -->
+            </div>
+        </div>
+    </div>
+    <!-- <button class="answer-btn" onclick="revealAnswer()">Check Answer</button> -->
+                
+    <script type="text/javascript">
+       function revealAnswer() {
+            var text = document.getElementById("riddle-text");
+            text.innerHTML = "<%= result.answer %>";
+        }
+    </script>
+</body>
+</html>
